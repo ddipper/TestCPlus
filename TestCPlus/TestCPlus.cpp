@@ -13,13 +13,14 @@ int main()
 
 
 	/*
-	int n1, n2, mul;  // n1 * n2 = mul
+	int n1, n2, mul, mod;  // n1 * n2 = mul
 	cin >> n1;
 	cin >> n2;
 	mul = n1 * n2;
 	cout << n1 << " * " << n2 << " = " << mul << endl; // endl = \n
+	mod = n1 % n2;
+	cout << n1 << " % " << n2 << " = " << mod << endl;
 	*/
-	
 
 
 	return 0;
