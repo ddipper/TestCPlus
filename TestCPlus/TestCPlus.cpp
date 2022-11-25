@@ -5,6 +5,9 @@
 #include <Windows.h>
 
 using namespace std;
+
+void hello();
+
 struct Auto {
 	int wheels;
 	float speed;
@@ -144,7 +147,7 @@ int main()
 
 
 	//structurs
-	Auto audi;
+	/*Auto audi;
 	audi.color = 'r';
 	audi.speed = 190.12;
 	audi.wheels = 4;
@@ -152,6 +155,35 @@ int main()
 	Auto nissan = { 4, 234.21, 'b' };
 
 	cout << "audi speed = " << audi.speed << "\n" << "nissan speed = " << nissan.speed << endl;
+	*/
+
+
+	//hello();
+
+
+	//Practic
+	/*
+	int arr1[3] = { 1, 2, 3 };
+	for (int number : arr1)
+		cout << number << endl;
+	*/
+
+	//string s1, s2, s3;
+	//getline(cin,s1);
+	//getline(cin,s2);
+	//cout << s1 << " " << s2 << endl;
+	
+	string s1;
+	string b = " <3";
+	getline(cin, s1);
+	cout << "size string: " << s1.length() << endl; 
+	cout << "empty string: " << s1.empty() << endl;
+	cout << "last symbol <3: " << s1.append(b) << endl;
 
 	return 0;
+}
+
+void hello()
+{
+	std::cout << "Hello" << std::endl;
 }
