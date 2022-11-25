@@ -1,11 +1,25 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <string>
+#include <clocale>
+#include <Windows.h>
 
 using namespace std;
+struct Auto {
+	int wheels;
+	float speed;
+	char color;
+
+};
 
 int main()
 {
+	//http://cppstudio.com/post/437/ //for string functions
+
+	setlocale(LC_CTYPE, "rus");			//rus language in cout!!!
+	SetConsoleCP(1251);					//rus in cin!!!
+	SetConsoleOutputCP(1251);			//rus in cout!!!
+
 
 	/*
 	//hello world
@@ -106,7 +120,7 @@ int main()
 	int value = 1;
 	int* ptrvalue = &value;
 
-	int arr[5];
+	int arr[3];
 	for (int i = 0; i < 3;i++)
 	{
 		cin >> arr[i];
@@ -116,6 +130,28 @@ int main()
 
 
 	// string and char
-	
+	/*
+	setlocale(LC_CTYPE, "rus");			//rus language in cout!!!
+	SetConsoleCP(1251);					//rus in cin!!!
+	SetConsoleOutputCP(1251);			//rus in cout!!!
+	cout << "Привет";
+
+	char string[500];
+	cout << "Введите строку: ";
+	//gets (string);
+	cout << string << endl;
+	*/
+
+
+	//structurs
+	Auto audi;
+	audi.color = 'r';
+	audi.speed = 190.12;
+	audi.wheels = 4;
+
+	Auto nissan = { 4, 234.21, 'b' };
+
+	cout << "audi speed = " << audi.speed << "\n" << "nissan speed = " << nissan.speed << endl;
+
 	return 0;
 }
