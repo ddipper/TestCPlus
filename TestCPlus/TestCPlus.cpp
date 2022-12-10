@@ -17,7 +17,7 @@ struct Auto {
 
 int main()
 {
-	//http://cppstudio.com/post/437/ //for string functions
+	//http://cppstudio.com/post/437/ //for string function
 
 	setlocale(LC_CTYPE, "rus");			//rus language in cout!!!
 	SetConsoleCP(1251);					//rus in cin!!!
@@ -160,6 +160,7 @@ int main()
 
 	//hello();
 
+	
 
 	//Practic
 	/*
